@@ -15,4 +15,3 @@ const cli = Cli.new([
 ]);
 
 await cli.run();
-
