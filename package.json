@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "build": "npx eslint .",
-    "start": "node .",
+    "start": "node sample.js",
     "test": "mocha"
   },
   "devDependencies": {
