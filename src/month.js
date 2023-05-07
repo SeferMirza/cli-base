@@ -14,15 +14,19 @@ export default function({ moment }) {
     return obj.format(format);
   }
 
-  function next(month) {
+  function next(month,
+    count = 1
+  ) {
     return object(month)
-      .add(1, "month")
+      .add(count, "month")
       .format(format);
   }
 
-  function prev(month) {
+  function prev(month,
+    count = 1
+  ) {
     return object(month)
-      .subtract(1, "month")
+      .subtract(count, "month")
       .format(format);
   }
 
